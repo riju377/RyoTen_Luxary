@@ -1,0 +1,13 @@
+  .link {
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .link:hover {
+    text-decoration: underline;
+    color: #2196f3;
+  }
+  .MuiDataGrid-columnHeaderTitle{
+    font-size: large;
+    /* font-weight: bold; */
+  }
