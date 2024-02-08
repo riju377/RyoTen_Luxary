@@ -5,9 +5,11 @@ import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import axios from 'axios';
+import { useMerchant } from '../Hooks/MerchantContext';
 
-export default function Merchantnames({merchant, setMerchant}) {
+export default function Merchantnames() {
   const [names, setNames] = React.useState([])
+  const { merchant, setMerchant } = useMerchant();
 
   const handleChange = (event) => {
     setMerchant(event.target.value);

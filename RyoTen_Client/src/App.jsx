@@ -6,6 +6,8 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 import React, { useState } from "react";
 import NavBar from "./Components/NavBar";
 import TransactionDetails from "./Components/TransactionDetails";
+import { MerchantProvider } from './Hooks/MerchantContext';
+
 function App() {
 
   const [darkMode, setDarkMode] = useState(true);
@@ -24,11 +26,13 @@ function App() {
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <NavBar darkMode={darkMode} setDarkMode={setDarkMode} />
+        <MerchantProvider>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/transactiondetails/:id" element={<TransactionDetails />} />
           </Routes>
+        </MerchantProvider>
       </ThemeProvider>
     </BrowserRouter>
   )
