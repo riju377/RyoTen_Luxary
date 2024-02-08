@@ -20,7 +20,7 @@ To get started, follow these steps:
 1. Clone the repository: `git clone https://github.com/riju377/RyoTen_Luxary.git`
 2. Navigate to Backend directory: `cd ./Ryoten_Luxary/RyoTen_Backend`
 3. Install dependencies for Backend: `npm install`
-4. Run the backend: `node app.js`
+4. Run the backend: `node ./app.js`
 5. Navigate back to Client: `cd ../Ryoten_Client`
 6. Install dependencies for Frontend: `npm install`
 7. Run the Frontend: `npm run dev`

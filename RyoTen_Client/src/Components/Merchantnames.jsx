@@ -5,11 +5,11 @@ import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import axios from 'axios';
-import { useMerchant } from '../Hooks/MerchantContext';
+import MerchantContext from './Context/MerchantContext';
 
 export default function Merchantnames() {
   const [names, setNames] = React.useState([])
-  const { merchant, setMerchant } = useMerchant();
+  const { merchant, setMerchant } = React.useContext(MerchantContext);
 
   const handleChange = (event) => {
     setMerchant(event.target.value);
@@ -25,12 +25,12 @@ export default function Merchantnames() {
   return (
     <Box sx={{ minWidth: 120 }}>
       <FormControl fullWidth>
-        <InputLabel id="demo-simple-select-label">Age</InputLabel>
+        <InputLabel id="demo-simple-select-label">Merchant Name</InputLabel>
         <Select
           labelId="demo-simple-select-label"
           id="demo-simple-select"
           value={merchant}
-          label="Age"
+          label="Merchant Name"
           onChange={handleChange}
         >
           {names.map((name) => (

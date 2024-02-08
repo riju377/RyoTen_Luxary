@@ -5,13 +5,13 @@ import { BarChart } from '@mui/x-charts/BarChart';
 import useDocumentTitle from "../Hooks/TitleChanger";
 import Merchantnames from './Merchantnames';
 import axios from 'axios';
-import { useMerchant } from '../Hooks/MerchantContext';
+import MerchantContext from './Context/MerchantContext';
 
 const Home = ()=> {
 
   useDocumentTitle("Online Shopping site")
   // const [merchant, setMerchant] = React.useState("Grant PLC")
-  const { merchant, setMerchant } = useMerchant();
+  const { merchant, setMerchant } = React.useContext(MerchantContext);
   const [output, setOutput] = React.useState([]);
 
   React.useEffect(() =>{
