@@ -4,7 +4,7 @@ RyoTen Luxury Admin Console is a web application designed to manage transactions
 
 [Watch Demo Video](https://drive.google.com/file/d/14SjULUbg-UhFNCFNizY9NFKp2WcMTtwm/view?usp=sharing)
 
-You can watch a demonstration of the project in action by clicking the above image.
+You can watch a demonstration of the project in action by clicking the above Link.
 
 ## Table of Contents
 
