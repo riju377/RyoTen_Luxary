@@ -8,7 +8,7 @@ You can watch a demonstration of the project in action by clicking the above Lin
 
 ![Home Page](https://raw.githubusercontent.com/riju377/RyoTen_Luxury/main/images/Home.png)
 ![Dashboard](https://raw.githubusercontent.com/riju377/RyoTen_Luxury/main/images/Dashboard.png)
-![Transaction Timeline](https://raw.githubusercontent.com/riju377/RyoTen_Luxury/main/images/TransactionTimeline.png)
+![Transaction Timeline](https://raw.githubusercontent.com/riju377/RyoTen_Luxury/main/images/TransactionTImeline.png)
 
 
 ## Table of Contents
