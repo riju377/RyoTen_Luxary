@@ -2,9 +2,14 @@
 
 RyoTen Luxury Admin Console is a web application designed to manage transactions and provide insights into the operations of RyoTen Luxury, a premier platform specializing in the resale of refurbished luxurious goods and high-end apparel. The application serves as a dashboard for transaction management, displaying detailed information about transactions with merchants worldwide.
 
-[Watch Demo Video](https://drive.google.com/file/d/14SjULUbg-UhFNCFNizY9NFKp2WcMTtwm/view?usp=sharing)
+[Watch Demo Video](https://drive.google.com/file/d/1HFbvhkbTQZ9-20xQy-KVk3fBiX_FcjdV/view?usp=sharing)
 
 You can watch a demonstration of the project in action by clicking the above Link.
+
+![Home Page](https://raw.githubusercontent.com/riju377/RyoTen_Luxury/main/images/Home.png)
+![Dashboard](https://raw.githubusercontent.com/riju377/RyoTen_Luxury/main/images/Dashboard.png)
+![Transaction Timeline](https://raw.githubusercontent.com/riju377/RyoTen_Luxury/main/images/TransactionTimeline.png)
+
 
 ## Table of Contents
 
