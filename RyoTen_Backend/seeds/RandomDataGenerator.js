@@ -31,20 +31,20 @@ function generateRandomTransaction() {
     const randomStatus = casual.random_element(statuses); // Random status
 
     // Generate dates within the specified range
-    const initiatedAt = RandomDateGenerator.getRandomDateInRange(new Date('2023-01-01'), new Date('2024-01-31'));
-    const lastUpdatedAt = RandomDateGenerator.getRandomDateInRange(initiatedAt, new Date('2024-01-31'));
+    const initiatedAt = RandomDateGenerator.getRandomDateInRange(new Date('2023-01-01'), new Date('2023-12-31'));
+    const lastUpdatedAt = RandomDateGenerator.getRandomDateInRange(initiatedAt, new Date('2023-12-31'));
 
     let reversalIssueDate = null, reversalCompletionDate = null;
     let estimatedDate = null, completionDate = null;
 
     if(randomStatus !== 'Failed'){
-      estimatedDate = RandomDateGenerator.getRandomDateInRange(lastUpdatedAt, new Date('2024-01-31'));
-      completionDate = RandomDateGenerator.getRandomDateInRange(estimatedDate, new Date('2024-01-31'));
+      estimatedDate = RandomDateGenerator.getRandomDateInRange(lastUpdatedAt, new Date('2023-12-31'));
+      completionDate = RandomDateGenerator.getRandomDateInRange(estimatedDate, new Date('2023-12-31'));
     }
 
     if (randomStatus === 'Reversed') {
         reversalIssueDate = RandomDateGenerator.getRandomDateInRange(initiatedAt, completionDate);
-        reversalCompletionDate = RandomDateGenerator.getRandomDateInRange(reversalIssueDate, new Date('2024-01-31'));
+        reversalCompletionDate = RandomDateGenerator.getRandomDateInRange(reversalIssueDate, new Date('2023-12-31'));
     }
 
     return {
@@ -76,7 +76,7 @@ const numTransactions = 1000;
 const randomTransactions = generateRandomTransactions(numTransactions);
 
 // Write generated transactions to a file
-const fileName = './seeds/TransactionRecords.json';
+const fileName = './TransactionRecords.json';
 fs.writeFile(fileName, JSON.stringify(randomTransactions, null, 2), err => {
     if (err) {
         console.error('Error writing file:', err);

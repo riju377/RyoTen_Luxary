@@ -54,13 +54,14 @@ app.get('/transactions', (req, res) => {
 
 app.get('/getchart/:merchantname', (req, res) => {
   const merchantname = req.params.merchantname;
+  // console.log(merchantname)
   fs.readFile(path.join(__dirname, './seeds/TransactionRecords.json'), 'utf8', (err, data) => {
     if (err) {
       console.error(err);
       return res.status(500).json({ error: 'Internal Server Error' });
     }
     const rows = JSON.parse(data);
-    const transactions = rows.filter((row) => row.MerchantName == merchantname || "Grant PLC");
+    const transactions = rows.filter((row) => row.MerchantName == merchantname);
     const statusTotals = {
       "Completed": new Array(12).fill(0),
       "Failed": new Array(12).fill(0),
